@@ -6,12 +6,44 @@
   font-family: Monument;
   src: url(fonts\monumentextended-freeforpersonaluse\MonumentExtended-Regular.otf);
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .landing-page {
   background-image: url("https://products.ls.graphics/mesh-gradients/images/01.-Royal-Heath.jpg");
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
+  /* Navbar */
+}
+.landing-page nav {
+  color: white;
+  height: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+}
+.landing-page nav .logo {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.landing-page nav .links {
+  width: 45%;
+  display: flex;
+}
+.landing-page nav .links a {
+  width: 33%;
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .landing-page .title-designer {
   font-family: Gallient, Arial-bold, arial, sans-serif;
@@ -58,8 +90,13 @@ img {
 .projects h2 {
   font-size: 160px;
 }
-.projects h3 {
+.projects .project-titles {
+  display: inline-flex;
   font-size: 96px;
+}
+.projects .project-numbers {
+  display: inline-flex;
+  font-size: 36px;
 }
 
 .skills {

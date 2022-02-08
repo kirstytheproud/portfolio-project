@@ -8,6 +8,13 @@
   src: url(fonts\monumentextended-freeforpersonaluse\MonumentExtended-Regular.otf);
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 $heading-font-family: 'Monument', sans-serif;
 $body-font-family: 'Monument', sans-serif;
 $title-font-size: 180px;
@@ -21,6 +28,65 @@ $skills-font-size: 36px;
     flex-direction: column;
     margin: 0;
     padding: 0;
+
+
+/* Navbar */
+nav {
+    
+    color: white;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+   
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .links {
+        width: 45%;
+        display: flex;
+
+        a {
+            width: 33%;
+                color: white;
+                text-decoration: none;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+        }
+
+
+      }
+      
+    //   .links > a {
+    //     width: 33%;
+    //     color: white;
+    //     text-decoration: none;
+    //     height: 100%;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //   }
+      
+    //   .links > a:hover {
+    //     color: black;
+    //     background-color: white;
+    //   }
+
+
+  }
+  
+ 
+  
+
 
   
 
@@ -73,6 +139,7 @@ img {
   max-height: 50%;
 }
 
+
 .projects {
     font-family: $body-font-family;
     display: flex;
@@ -82,8 +149,15 @@ img {
         font-size: $heading-font-size;
     }
 
-    h3 {
+    .project-titles {
+        display: inline-flex;
         font-size: $project-font-size;
+
+    }
+
+    .project-numbers{
+    display: inline-flex;
+        font-size: $skills-font-size;
     }
 }
  
