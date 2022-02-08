@@ -1,3 +1,51 @@
-body {
-  background-image: url("https://products.ls.graphics/mesh-gradients/images/13.-Pale-Violet-Red_1.jpg");
+@font-face {
+  font-family: Gallient;
+  src: url(fonts\FontsFree-Net-Gallient-1.ttf);
+}
+@font-face {
+  font-family: Monument;
+  src: url(fonts\monumentextended-freeforpersonaluse\MonumentExtended-Regular.otf);
+}
+.landing-page {
+  background-image: url("https://products.ls.graphics/mesh-gradients/images/01.-Royal-Heath.jpg");
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+.landing-page .title-designer {
+  font-family: Gallient, Arial-bold, arial, sans-serif;
+  font-size: 200px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.landing-page .title-creative {
+  font-family: Monument, Arial-bold, arial, sans-serif;
+  font-size: 200px;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.landing-page .title-ampersand {
+  display: inline-flex;
+  font-family: Gallient;
+  font-size: 200px;
+  margin: 0;
+  padding: 0;
+}
+.landing-page .title-developer {
+  font-family: Monument;
+  font-size: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.gradient {
+  background-image: url("https://products.ls.graphics/mesh-gradients/images/01.-Royal-Heath.jpg");
+}
+
+img {
+  max-width: 50%;
+  max-height: 50%;
 }/*# sourceMappingURL=style.css.map */
