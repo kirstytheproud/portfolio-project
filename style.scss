@@ -10,12 +10,10 @@
 
 $heading-font-family: 'Monument', sans-serif;
 $body-font-family: 'Monument', sans-serif;
-$title-font-weight: 180px;
-$heading-font-weight: 160px;
-
-$skills-font-weight: 36px;
-$project-font-weight: 96px;
-// $base-font-size: 18px;
+$title-font-size: 180px;
+$heading-font-size: 160px;
+$project-font-size: 96px;
+$skills-font-size: 36px;
 
 .landing-page {
   background-image: url("https://products.ls.graphics/mesh-gradients/images/01.-Royal-Heath.jpg");
@@ -28,7 +26,7 @@ $project-font-weight: 96px;
 
     .title-designer {
       font-family: Gallient, Arial-bold, arial, sans-serif;
-      font-size: 200px;
+      font-size: $title-font-size;
       justify-content: center;
       margin: 0;
       padding: 0;
@@ -37,7 +35,7 @@ $project-font-weight: 96px;
 
     .title-creative {
       font-family: Monument, Arial-bold, arial, sans-serif;
-      font-size: 200px;
+      font-size: $title-font-size;
       justify-content: center;
       margin: 0;
       padding: 0;
@@ -47,7 +45,7 @@ $project-font-weight: 96px;
     .title-ampersand {
         display: inline-flex;
         font-family: Gallient;
-        font-size: 200px;
+        font-size: $title-font-size;
         margin: 0;
         padding: 0;
         
@@ -55,7 +53,7 @@ $project-font-weight: 96px;
 
     .title-developer {
         font-family: Monument;
-        font-size: 200px;
+        font-size: $title-font-size;
         margin: 0;
         padding: 0;
     }
@@ -74,3 +72,46 @@ img {
   max-width: 50%;
   max-height: 50%;
 }
+
+.projects {
+    font-family: $body-font-family;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: $heading-font-size;
+    }
+
+    h3 {
+        font-size: $project-font-size;
+    }
+}
+ 
+
+
+.skills {
+    font-family: $body-font-family;
+    font-size: 96px;
+
+
+    h2{
+        font-size: $heading-font-size;
+    }
+
+    h3 {
+        font-size: $project-font-size;
+
+    }
+
+    h4 {
+        font-size: $skills-font-size;
+    }
+}
+
+.contact {
+    font-family: $body-font-family;
+}
+
+// $heading-font-size: 160px;
+// $project-font-size: 96px;
+// $skills-font-size: 36px;

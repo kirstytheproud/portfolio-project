@@ -15,14 +15,14 @@
 }
 .landing-page .title-designer {
   font-family: Gallient, Arial-bold, arial, sans-serif;
-  font-size: 200px;
+  font-size: 180px;
   justify-content: center;
   margin: 0;
   padding: 0;
 }
 .landing-page .title-creative {
   font-family: Monument, Arial-bold, arial, sans-serif;
-  font-size: 200px;
+  font-size: 180px;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -30,13 +30,13 @@
 .landing-page .title-ampersand {
   display: inline-flex;
   font-family: Gallient;
-  font-size: 200px;
+  font-size: 180px;
   margin: 0;
   padding: 0;
 }
 .landing-page .title-developer {
   font-family: Monument;
-  font-size: 200px;
+  font-size: 180px;
   margin: 0;
   padding: 0;
 }
@@ -48,4 +48,34 @@
 img {
   max-width: 50%;
   max-height: 50%;
+}
+
+.projects {
+  font-family: "Monument", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+.projects h2 {
+  font-size: 160px;
+}
+.projects h3 {
+  font-size: 96px;
+}
+
+.skills {
+  font-family: "Monument", sans-serif;
+  font-size: 96px;
+}
+.skills h2 {
+  font-size: 160px;
+}
+.skills h3 {
+  font-size: 96px;
+}
+.skills h4 {
+  font-size: 36px;
+}
+
+.contact {
+  font-family: "Monument", sans-serif;
 }/*# sourceMappingURL=style.css.map */
