@@ -8,15 +8,13 @@
   src: url(fonts\monumentextended-freeforpersonaluse\MonumentExtended-Regular.otf);
 }
 
-
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-
-$heading-font-family: 'Monument', sans-serif;
-$body-font-family: 'Monument', sans-serif;
+$heading-font-family: "Monument", sans-serif;
+$body-font-family: "Monument", sans-serif;
 $title-font-size: 180px;
 $heading-font-size: 160px;
 $project-font-size: 96px;
@@ -26,15 +24,13 @@ $skills-font-size: 36px;
   background-image: url("img/hero.svg");
   background-size: cover;
   background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 
-
-/* Navbar */
-nav {
-    
+  /* Navbar */
+  nav {
     color: white;
     height: 50px;
     font-weight: bold;
@@ -42,82 +38,64 @@ nav {
     justify-content: space-between;
 
     .logo {
-   
-        width: 15%;
+      width: 15%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .links {
+      width: 45%;
+      display: flex;
+
+      a {
+        width: 33%;
+        color: white;
+        text-decoration: none;
+        height: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
       }
-      
-      .links {
-        width: 45%;
-        display: flex;
-
-        a {
-            width: 33%;
-                color: white;
-                text-decoration: none;
-                height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-
-
-        }
-
-
-      }
-
-
-  }
-  
- 
-  
-
-
-  
-
-    .title-designer {
-      font-family: Gallient, Arial-bold, arial, sans-serif;
-      font-size: $title-font-size;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-
-    }
-
-    .title-creative {
-      font-family: Monument, Arial-bold, arial, sans-serif;
-      font-size: $title-font-size;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-
-    }
-
-    .title-ampersand {
-        display: inline-flex;
-        font-family: Gallient;
-        font-size: $title-font-size;
-        margin: 0;
-        padding: 0;
-        
-    }
-
-    .title-developer {
-        font-family: Monument;
-        font-size: $title-font-size;
-        margin: 0;
-        padding: 0;
     }
   }
 
+  .title-designer {
+    font-family: Gallient, Arial-bold, arial, sans-serif;
+    font-size: $title-font-size;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .title-creative {
+    font-family: Monument, Arial-bold, arial, sans-serif;
+    font-size: $title-font-size;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .title-ampersand {
+    display: inline-flex;
+    font-family: Gallient;
+    font-size: $title-font-size;
+    margin: 0;
+    padding: 0;
+  }
+
+  .title-developer {
+    font-family: Monument;
+    font-size: $title-font-size;
+    margin: 0;
+    padding: 0;
+  }
+}
 
 .gradient {
   background-image: url("img/body.svg");
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 // body {
@@ -129,119 +107,124 @@ img {
   max-height: 50%;
 }
 
-
 .projects {
-    font-family: $body-font-family;
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-    padding: 30px;
-    // margin: 20px;
-    // padding: 20px;
+  font-family: $body-font-family;
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+  padding: 30px;
+  // margin: 20px;
+  // padding: 20px;
 
-    h2 {
-        font-size: $heading-font-size;
-    }
+  h2 {
+    font-size: $heading-font-size;
+  }
 
-    .project-titles {
-        display: inline-flex;
-        font-size: $project-font-size;
+  .project-titles {
+    display: inline-flex;
+    font-size: $project-font-size;  
 
-    }
+  }
 
-    .project-numbers{
+  .project-title-1 {
+    display: inline-flex;
+  
+  }
+
+  .project-title-2 {
+    display: inline-flex;
+  
+  }
+
+  .project-title-3 {
+    display: inline-flex;
+  
+  }
+
+  .project-title-4 {
+    display: inline-flex;
+  
+  }
+
+  .project-numbers {
     display: inline-block;
-        font-size: $skills-font-size;
-    }
+    font-size: $skills-font-size;
+    padding-top: 30px;
+  }
 }
- 
+
+
+
+
 
 // .gradient3 {
 //       background-image: url('https://products.ls.graphics/mesh-gradients/images/33.-Beauty-Bush.jpg');
 // }
 
 .skills {
-    font-family: $body-font-family;
-    display: flex;
-    flex-direction: column;
-    font-size: 96px;
-    margin: 30px;
-    padding: 30px;
-    // background-image: url('https://products.ls.graphics/mesh-gradients/images/33.-Beauty-Bush.jpg');
+  font-family: $body-font-family;
+  display: flex;
+  flex-direction: column;
+  font-size: 96px;
+  margin: 30px;
+  padding: 30px;
+  // background-image: url('https://products.ls.graphics/mesh-gradients/images/33.-Beauty-Bush.jpg');
 
+  h2 {
+    font-size: $heading-font-size;
+  }
 
-    h2 {
-        font-size: $heading-font-size;
-    }
+  h3 {
+    font-size: $project-font-size;
+  }
 
-    h3 {
-        font-size: $project-font-size;
-
-    }
-
-    #skills {
-        font-size: $skills-font-size;
-        padding: 20px;
-    }
-}
-
-.project-title-1 {
-  display: inline-flex;
-
-}
-
-.project-numbers {
-    padding-top: 30px;
-
+  #skills {
+    font-size: $skills-font-size;
+    padding: 20px;
+  }
 }
 
 .contact {
   // display:flex;
   flex-direction: column;
-    font-family: $body-font-family;
-  
-h2{
-    font-size: $heading-font-size;
-    
-}
+  font-family: $body-font-family;
 
-h3{
+  h2 {
+    font-size: $heading-font-size;
+  }
+
+  h3 {
     // margin: 30px;
     padding: 30px;
     $skills-font-size: 36px;
-
-
-}
-a {
+  }
+  a {
     text-decoration: none;
-}
+  }
 
-.button {
-  background-color: #5b3f9e;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 36px;
-  border-radius: 10px;
-  // margin: 4px 2px;
-  cursor: pointer;
-}
-
+  .button {
+    background-color: #5b3f9e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 36px;
+    border-radius: 10px;
+    // margin: 4px 2px;
+    cursor: pointer;
+  }
 }
 
 .social-media {
-
   i {
     display: inline-flex;
     flex-direction: row;
 
-      padding: 40px;
-    
-    }
+    padding: 40px;
   }
+}
 
 // $heading-font-size: 160px;
 // $project-font-size: 96px;

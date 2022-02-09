@@ -149,9 +149,34 @@ img {
   font-size: 96px;
 }
 
+.projects .project-title-1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.projects .project-title-2 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.projects .project-title-3 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.projects .project-title-4 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
 .projects .project-numbers {
   display: inline-block;
   font-size: 36px;
+  padding-top: 30px;
 }
 
 .skills {
@@ -179,16 +204,6 @@ img {
 .skills #skills {
   font-size: 36px;
   padding: 20px;
-}
-
-.project-title-1 {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.project-numbers {
-  padding-top: 30px;
 }
 
 .contact {
