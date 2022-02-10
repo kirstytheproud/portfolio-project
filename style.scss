@@ -237,10 +237,15 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   .project__images {
     display: flex;
     max-width: 50%;
+    opacity: 50%;
     max-height: 50%;
     padding: 10px;
     margin-left: 200px;
     border-radius: 5%
+  }
+
+  .project__images:hover {
+    opacity: 100%;
   }
 
   .projects__headline {

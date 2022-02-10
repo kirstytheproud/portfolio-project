@@ -253,10 +253,15 @@
   display: -ms-flexbox;
   display: flex;
   max-width: 50%;
+  opacity: 50%;
   max-height: 50%;
   padding: 10px;
   margin-left: 200px;
   border-radius: 5%;
+}
+
+.projects .project__images:hover {
+  opacity: 100%;
 }
 
 .projects .projects__headline {
