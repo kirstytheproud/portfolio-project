@@ -118,9 +118,9 @@
 }
 
 .landing-page .headline .title-ampersand {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -137,9 +137,9 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   font-family: Monument;
   font-size: 160px;
   color: white;
@@ -150,13 +150,13 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
 }
 
 .rotate {
-  margin: 20px;
   width: 150px;
   height: 150px;
   -webkit-animation-name: spin;
@@ -396,9 +396,9 @@ img {
 
 @media screen and (max-width: 1024px) {
   .headline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -415,7 +415,7 @@ img {
     font-family: Monument, Arial-bold, arial, sans-serif;
     color: white;
     text-shadow: 0px 4px 5px #b3b3b3;
-    font-size: 56px;
+    font-size: 2px;
   }
   .headline .title-designer {
     display: -webkit-box;
@@ -429,28 +429,13 @@ img {
     color: white;
     text-shadow: 0px 4px 5px #b3b3b3;
   }
-  .headline .title-ampersand {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 50px;
-    font-family: Gallient;
-    color: white;
-    text-shadow: 0px 4px 5px #b3b3b3;
-    font-size: 56px;
-  }
   .headline .title-developer {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     font-family: Monument;
     font-size: 56px;
     color: white;
