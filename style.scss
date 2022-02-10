@@ -685,5 +685,19 @@ $skills-font-size-1024: 18px;
   
   }
 
+  .btn {
+    background-color: #5b3f9e;
+    border: none;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-family: $body-font-family;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
 
 }

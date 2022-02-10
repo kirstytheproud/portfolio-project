@@ -730,5 +730,18 @@
   .section__about-me #about-me-p2 {
     padding: 20px;
   }
+  .btn {
+    background-color: #5b3f9e;
+    border: none;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    font-family: "Monument", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+  }
 }
 /*# sourceMappingURL=style.css.map */
