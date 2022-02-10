@@ -22,7 +22,7 @@ $project-font-size: 76px;
 $skills-font-size: 36px;
 $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
-.landing-page {
+.header__landing-page {
   background-image: url("img/hero.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,14 +40,14 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     justify-content: space-between;
     font-family: 'Open Sans', sans-serif;
 
-    .logo {
+    .header__logo {
       width: 15%;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
-    .links {
+    .header__links {
       width: 45%;
       display: flex;
 
@@ -71,7 +71,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
       position: relative;
 
 
-  .title-creative {
+  .header__title--creative {
     display: flex;
     justify-content:flex-start;
     font-family: Monument, Arial-bold, arial, sans-serif;
@@ -85,7 +85,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
   }
 
-  .title-designer {
+  .header__title--designer {
     display: flex;
     justify-content: center;
     margin-left: 80px;
@@ -97,22 +97,22 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
    
   }
 
-  .title-ampersand {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 50px;
-    font-family: Gallient;
-    color: white;
-    text-shadow: $title-text-shadow;
-    font-size: 200px;
+  // .title-ampersand {
+  //   display: flex;
+  //   justify-content: flex-end;
+  //   margin: 0px;
+  //   padding: 0px;
+  //   margin-left: 50px;
+  //   font-family: Gallient;
+  //   color: white;
+  //   text-shadow: $title-text-shadow;
+  //   font-size: 200px;
 
-  }
+  // }
   
 
-  .title-developer {
-    display: inline-flex;
+  .header__title--developer {
+    display: flex;
     justify-content: flex-end;
     font-family: Monument;
     font-size: $title-font-size;
@@ -127,7 +127,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
 }
 
-.scroll {
+.header__scroll {
   display: inline-flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -192,7 +192,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 }
 
 
-.about-me {
+.section__about-me {
   height: 700px;
   display: grid;
   padding: 40px;
@@ -203,8 +203,6 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   font-family: 'Open Sans', sans-serif;
 
   #about-me-p1 {
-   
-  
     grid-area: 1/2/2/3;
     margin-top: 80px;
   }
@@ -217,7 +215,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 }
 
 
-.gradient {
+.body__background--gradient {
   background-image: url("img/body.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -260,21 +258,21 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   padding: 30px;
   }
 
-  .project-titles {
+  .project__titles {
     display: inline-flex;
     font-size: $project-font-size;  
    margin-left: 30px;
   //   padding: 30px;
   }
 
-  .project-title-1 {
+  .project__title--1 {
     display: inline-flex;
     justify-content: center;
     margin-left: 500px;
   
   }
 
-  .project-title-2 {
+  .project__title--2 {
     
     display: inline-flex;
       justify-content: center;
@@ -284,21 +282,21 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   
   }
 
-  .project-title-3 {
+  .project__title--3 {
     display: inline-flex;
     justify-content: center;
     margin-left: 500px;
   
   }
 
-  .project-title-4 {
+  .project__title--4 {
     display: inline-flex;
       justify-content: center;
       margin-left: 500px;
   
   }
 
-  .project-numbers {
+  .project__numbers {
     display: inline-block;
     font-size: $skills-font-size;
     padding-top: 30px;
@@ -358,6 +356,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   }
   .email__link {
     text-decoration: none;
+    color:#5b3f9e;
   }
 
   .btn {
@@ -416,14 +415,14 @@ $skills-font-size-1024: 18px;
       justify-content: space-between;
       font-family: 'Open Sans', sans-serif;
   
-      .logo {
+      .header__logo {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left:20px;
       }
   
-      .links {
+      .header__links {
         width: 45%;
         display: flex;
   
@@ -450,9 +449,9 @@ $skills-font-size-1024: 18px;
     
 
 
-.title-creative {
-  display: flex;
-  justify-content:center;
+.header__title--creative {
+  display: inline-flex;
+  // justify-content:center;
   font-family: Monument, Arial-bold, arial, sans-serif;
   color: white;
   text-shadow: $title-text-shadow;
@@ -460,17 +459,17 @@ $skills-font-size-1024: 18px;
   
 }
 
-.title-designer {
+.header__title--designer {
   display: flex;
   justify-content: center;
   font-family: Gallient, Times, serif;
-  font-size: 2px;
+  font-size: 20px;
   color: white;
   text-shadow: $title-text-shadow;
  
 }
 
-.title-developer {
+.header__title--developer {
   display: flex;
   justify-content: center;
   font-family: Monument;
@@ -484,7 +483,7 @@ $skills-font-size-1024: 18px;
 
 
   //ABOUT ME SECTION
-  .about-me {
+  .section__about-me {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -533,7 +532,7 @@ $skills-font-size-1024: 18px;
       padding: 20px;
     }
   
-    .project-titles {
+    .project__titles {
       display: inline-flex;
   flex-direction: column;
       font-size: $project-font-size-1024;  
@@ -541,31 +540,31 @@ $skills-font-size-1024: 18px;
   
     }
   
-    .project-title-1 {
+    .project__title--1 {
       display: inline-flex;
       justify-content: center;
       margin: 0px;
     }
   
-    .project-title-2 {
+    .project__title--2 {
       display: inline-flex;
       justify-content: center;
       margin: 0px;
     }
   
-    .project-title-3 {
+    .project__title--3 {
       display: inline-flex;
       justify-content: center;
       margin: 0px;
     }
   
-    .project-title-4 {
+    .project__title--4 {
       display: inline-flex;
       justify-content: center;
       margin: 0px;
     }
   
-    .project-numbers {
+    .project__numbers {
       display: inline-flex;
       font-size: $project-font-size-1024;  
       padding: 0px;
@@ -658,4 +657,30 @@ $skills-font-size-1024: 18px;
     }
   }
   
+}
+
+@media screen and (max-width: 600px){
+  .section__about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    font-size: $skills-font-size-1024;
+    margin: 0;
+  
+    #about-me-p1 {
+      padding: 20px;
+      margin-top: 0;
+    }
+  
+    #about-me-p2 {
+      padding:20px;
+
+      // padding-bottom: 20px;
+    }
+  
+  }
+
+
 }
