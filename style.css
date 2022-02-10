@@ -87,7 +87,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
+  padding: 50px;
 }
 
 .header__landing-page .headline .header__title--creative {
@@ -100,7 +100,7 @@
   font-family: Monument, Arial-bold, arial, sans-serif;
   color: white;
   text-shadow: 0px 4px 5px #b3b3b3;
-  font-size: 150px;
+  font-size: calc(1em + 8vw);
 }
 
 .header__landing-page .headline .header__title--designer {
@@ -113,7 +113,7 @@
   margin-left: 80px;
   padding: 0;
   font-family: Gallient, Times, serif;
-  font-size: 150px;
+  font-size: calc(1em + 8vw);
   color: white;
   text-shadow: 0px 4px 5px #b3b3b3;
 }
@@ -126,7 +126,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-family: Monument;
-  font-size: 150px;
+  font-size: calc(1em + 8vw);
   color: white;
   text-shadow: 0px 4px 5px #b3b3b3;
 }
@@ -459,16 +459,27 @@
             justify-content: center;
     font-size: 16px;
   }
-  .header__title--creative {
+  .headline {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .headline .header__title--creative {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-family: Monument, Arial-bold, arial, sans-serif;
     color: white;
     text-shadow: 0px 4px 5px #b3b3b3;
-    font-size: 2px;
   }
-  .header__title--designer {
+  .headline .header__title--designer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -476,11 +487,10 @@
         -ms-flex-pack: center;
             justify-content: center;
     font-family: Gallient, Times, serif;
-    font-size: 20px;
     color: white;
     text-shadow: 0px 4px 5px #b3b3b3;
   }
-  .header__title--developer {
+  .headline .header__title--developer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -488,7 +498,6 @@
         -ms-flex-pack: center;
             justify-content: center;
     font-family: Monument;
-    font-size: 2px;
     color: white;
     text-shadow: 0px 4px 5px #b3b3b3;
   }
