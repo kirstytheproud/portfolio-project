@@ -99,7 +99,7 @@
   font-family: Monument, Arial-bold, arial, sans-serif;
   color: white;
   text-shadow: 0px 4px 5px #b3b3b3;
-  font-size: 100px;
+  font-size: 160px;
 }
 
 .landing-page .headline .title-designer {
@@ -112,7 +112,7 @@
   margin-left: 80px;
   padding: 0;
   font-family: Gallient, Times, serif;
-  font-size: 100px;
+  font-size: 160px;
   color: white;
   text-shadow: 0px 4px 5px #b3b3b3;
 }
@@ -141,7 +141,7 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   font-family: Monument;
-  font-size: 100px;
+  font-size: 160px;
   color: white;
   text-shadow: 0px 4px 5px #b3b3b3;
 }
@@ -395,6 +395,67 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
+  .headline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+  }
+  .headline .title-creative {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: Monument, Arial-bold, arial, sans-serif;
+    color: white;
+    text-shadow: 0px 4px 5px #b3b3b3;
+    font-size: 56px;
+  }
+  .headline .title-designer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: Gallient, Times, serif;
+    font-size: 56px;
+    color: white;
+    text-shadow: 0px 4px 5px #b3b3b3;
+  }
+  .headline .title-ampersand {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 50px;
+    font-family: Gallient;
+    color: white;
+    text-shadow: 0px 4px 5px #b3b3b3;
+    font-size: 56px;
+  }
+  .headline .title-developer {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    font-family: Monument;
+    font-size: 56px;
+    color: white;
+    text-shadow: 0px 4px 5px #b3b3b3;
+  }
   .about-me {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -435,15 +496,15 @@ img {
     height: 100%;
   }
   .projects .projects__headline {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     font-size: 56px;
   }
   .projects .project-titles {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -471,8 +532,12 @@ img {
     display: flex;
   }
   .projects .project-numbers {
-    display: inline-block;
-    font-size: 18px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 36px;
+    padding: 0px;
+    padding-right: 20px;
   }
   .skills {
     font-family: "Monument", sans-serif;

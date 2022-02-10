@@ -16,7 +16,7 @@
 
 $heading-font-family: "Monument", sans-serif;
 $body-font-family: "Monument", sans-serif;
-$title-font-size: 100px;
+$title-font-size: 160px;
 $heading-font-size: 100px;
 $project-font-size: 76px;
 $skills-font-size: 36px;
@@ -380,73 +380,58 @@ $skills-font-size-1024: 18px;
 
 @media screen and (max-width: 1024px) {
   
-  //   $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
-//   //max-width 1024px variables
-// $heading-font-size-1024: 3px;
-// $project-font-size-1024: 36px;
-// $skills-font-size-1024: 18px;
-
-//   .headline{
-//     display:flex;
-//     flex-direction: column;
-//     position: relative;
+    $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
 
-// .title-creative {
-//   display: flex;
-//   justify-content:flex-start;
-//   font-family: Monument, Arial-bold, arial, sans-serif;
-//   color: white;
-//   text-shadow: $title-text-shadow;
-//   font-size: $heading-font-size-1024;
-//   // margin-left: 300px;
-//   // margin-bottom: 0;
-//   // margin-top: 20px;
-//   // padding: 0;
+  .headline{
+    display:flex;
+    flex-direction: column;
+    position: relative;
 
-// }
 
-// .title-designer {
-//   display: flex;
-//   justify-content: center;
-//   margin-left: 80px;
-//   padding: 0;
-//   font-family: Gallient, Times, serif;
-//   font-size: $heading-font-size-1024;
-//   color: white;
-//   text-shadow: $title-text-shadow;
+.title-creative {
+  display: flex;
+  justify-content:center;
+  font-family: Monument, Arial-bold, arial, sans-serif;
+  color: white;
+  text-shadow: $title-text-shadow;
+  font-size: $heading-font-size-1024;
+  
+}
+
+.title-designer {
+  display: flex;
+  justify-content: center;
+  font-family: Gallient, Times, serif;
+  font-size: $heading-font-size-1024;
+  color: white;
+  text-shadow: $title-text-shadow;
  
-// }
+}
 
-// .title-ampersand {
-//   display: inline-flex;
-//   justify-content: flex-end;
-//   margin: 0px;
-//   padding: 0px;
-//   margin-left: 50px;
-//   font-family: Gallient;
-//   color: white;
-//   text-shadow: $title-text-shadow;
-//   font-size: $heading-font-size-1024;
+.title-ampersand {
+  display: inline-flex;
+  justify-content: flex-end;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 50px;
+  font-family: Gallient;
+  color: white;
+  text-shadow: $title-text-shadow;
+  font-size: $heading-font-size-1024;
+}
 
-// }
 
-
-// .title-developer {
-//   display: inline-flex;
-//   justify-content: flex-start;
-//   font-family: Monument;
-//   font-size: $heading-font-size-1024;
-//   color: white;
-//   text-shadow: $title-text-shadow;
-//   // margin-left: 200px;
-//   // padding: 0;
-//   // padding-bottom: 60px;
+.title-developer {
+  display: inline-flex;
+  justify-content: flex-start;
+  font-family: Monument;
+  font-size: $heading-font-size-1024;
+  color: white;
+  text-shadow: $title-text-shadow;
+}
+}
   
-// }
-// }
-  
-// }
 
 
 
@@ -493,13 +478,13 @@ $skills-font-size-1024: 18px;
     }
   
     .projects__headline {
-      display:flex;
+      display: inline-flex;
       font-size: $heading-font-size-1024;
     }
   
     .project-titles {
-      display: flex;
-      flex-direction: column;
+      display: inline-flex;
+  flex-direction: column;
       font-size: $project-font-size-1024;  
   
     }
@@ -525,9 +510,10 @@ $skills-font-size-1024: 18px;
     }
   
     .project-numbers {
-      display: inline-block;
-      font-size: $skills-font-size-1024;
-      // padding-top: 30px;
+      display: inline-flex;
+      font-size: $project-font-size-1024;  
+      padding: 0px;
+      padding-right: 20px;
     }
   }
 
