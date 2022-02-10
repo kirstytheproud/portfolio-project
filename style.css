@@ -391,9 +391,10 @@
 
 .contact h3 {
   padding: 30px;
+  font-size: 24px;
 }
 
-.contact a {
+.contact .email__link {
   text-decoration: none;
 }
 
@@ -405,13 +406,15 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 26px;
+  font-size: 20px;
   font-family: "Monument", sans-serif;
   border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 5px #b3b3b3;
+          box-shadow: 0px 4px 5px #b3b3b3;
   cursor: pointer;
 }
 
-.social-media i {
+.social-media__icons i {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -419,7 +422,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 40px;
+  padding: 50px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -620,6 +623,51 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-family: "Monument", sans-serif;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .contact__title {
+    font-size: 56px;
+  }
+  .contact h3 {
+    padding: 30px;
+  }
+  .contact .email__link {
+    text-decoration: none;
+  }
+  .contact .btn {
+    background-color: #5b3f9e;
+    border: none;
+    color: white;
+    padding: 10px 36px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Monument", sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .social-media__icons i {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
