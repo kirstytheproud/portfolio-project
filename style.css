@@ -198,7 +198,7 @@
 }
 
 .about-me {
-  height: 850px;
+  height: 700px;
   display: -ms-grid;
   display: grid;
   padding: 40px;
@@ -207,7 +207,7 @@
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .about-me #about-me-p1 {
@@ -472,8 +472,12 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 400px;
     font-size: 18px;
+    margin: 0;
   }
   .about-me #about-me-p1 {
     padding: 20px;
