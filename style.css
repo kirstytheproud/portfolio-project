@@ -99,7 +99,7 @@
   font-family: Monument, Arial-bold, arial, sans-serif;
   color: white;
   text-shadow: 0px 4px 5px #b3b3b3;
-  font-size: 160px;
+  font-size: 150px;
 }
 
 .landing-page .headline .title-designer {
@@ -112,7 +112,7 @@
   margin-left: 80px;
   padding: 0;
   font-family: Gallient, Times, serif;
-  font-size: 160px;
+  font-size: 150px;
   color: white;
   text-shadow: 0px 4px 5px #b3b3b3;
 }
@@ -141,7 +141,7 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-family: Monument;
-  font-size: 160px;
+  font-size: 150px;
   color: white;
   text-shadow: 0px 4px 5px #b3b3b3;
 }
@@ -201,6 +201,8 @@
   height: 850px;
   display: -ms-grid;
   display: grid;
+  padding: 40px;
+  margin: 30px;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
@@ -214,7 +216,7 @@
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-area: 1/2/2/3;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
 .about-me #about-me-p2 {
@@ -229,11 +231,6 @@
   background-image: url("img/body.svg");
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-img {
-  max-width: 50%;
-  max-height: 50%;
 }
 
 .projects {
@@ -251,14 +248,28 @@ img {
   padding: 30px;
 }
 
-.projects .projects__headline {
+.projects .project__images {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 50%;
+  max-height: 50%;
+  padding: 10px;
+  margin-left: 200px;
+  border-radius: 5%;
+}
+
+.projects .projects__headline {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-size: 100px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  margin: 30px;
+  padding: 30px;
 }
 
 .projects .project-titles {
@@ -266,30 +277,47 @@ img {
   display: -ms-inline-flexbox;
   display: inline-flex;
   font-size: 76px;
+  margin-left: 30px;
 }
 
 .projects .project-title-1 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 500px;
 }
 
 .projects .project-title-2 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 500px;
 }
 
 .projects .project-title-3 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 500px;
 }
 
 .projects .project-title-4 {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 500px;
 }
 
 .projects .project-numbers {
@@ -352,7 +380,7 @@ img {
           align-items: center;
 }
 
-.contact h2 {
+.contact .contact__title {
   font-size: 100px;
 }
 
@@ -364,7 +392,7 @@ img {
   text-decoration: none;
 }
 
-.contact .button {
+.contact .btn {
   background-color: #5b3f9e;
   border: none;
   color: white;
@@ -372,15 +400,10 @@ img {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 36px;
+  font-size: 26px;
+  font-family: "Monument", sans-serif;
   border-radius: 10px;
   cursor: pointer;
-}
-
-#get-in {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
 }
 
 .social-media i {
@@ -453,10 +476,10 @@ img {
     font-size: 18px;
   }
   .about-me #about-me-p1 {
-    margin-top: 100px;
+    padding: 20px;
   }
   .about-me #about-me-p2 {
-    margin-top: 100px;
+    padding: 20px;
   }
   .projects {
     font-family: "Monument", sans-serif;
@@ -470,21 +493,25 @@ img {
     margin: 30px;
     padding: 30px;
   }
-  .projects img {
+  .projects .project__images {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    height: 100%;
+    max-width: 80%;
+    max-height: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .projects .projects__headline {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    text-align: center;
     font-size: 56px;
+    padding: 20px;
   }
   .projects .project-titles {
     display: -webkit-inline-box;
@@ -495,26 +522,43 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     font-size: 36px;
+    margin: 0px;
   }
   .projects .project-title-1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px;
   }
   .projects .project-title-2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px;
   }
   .projects .project-title-3 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px;
   }
   .projects .project-title-4 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0px;
   }
   .projects .project-numbers {
     display: -webkit-inline-box;
