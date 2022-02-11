@@ -705,6 +705,46 @@
 }
 
 @media screen and (max-width: 600px) {
+  .header__title--creative {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: Monument, Arial-bold, arial, sans-serif;
+    color: white;
+    text-shadow: 0px 4px 5px #b3b3b3;
+    margin: 0;
+  }
+  .header__title--designer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: Gallient, Times, serif;
+    color: white;
+    text-shadow: 0px 4px 5px #b3b3b3;
+    margin: 0;
+  }
+  .header__title--developer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: Monument;
+    color: white;
+    text-shadow: 0px 4px 5px #b3b3b3;
+    margin: 0;
+  }
+  .rotate {
+    width: 130px;
+  }
+  .header__scroll {
+    padding: 0;
+    margin: 0;
+  }
   .section__about-me {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -742,6 +782,59 @@
     font-family: "Monument", sans-serif;
     border-radius: 10px;
     cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .headline {
+    padding: 0;
+  }
+  .header__scroll {
+    padding: 0;
+    margin: 0;
+  }
+  .header__logo {
+    font-size: 12px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header__links {
+    opacity: 0%;
+  }
+  .header__title--creative {
+    text-align: center;
+    margin: 0;
+  }
+  .header__title--designer {
+    text-align: center;
+    margin: 0;
+  }
+  .header__title--developer {
+    text-align: center;
+    margin: 0;
+  }
+  .rotate {
+    height: 100px;
+    padding: 0;
+    margin: 0;
+  }
+  .projects__headline {
+    font-size: 26px;
+  }
+  .skills h4 {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact .email {
+    font-size: 20px;
+  }
+  .contact .email__link {
+    font-size: 20px;
+  }
+  .contact h3 {
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -79,12 +79,6 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     color: white;
     text-shadow: $title-text-shadow;
     font-size: calc(1em + 8vw);
-    // font-size: $title-font-size;
-    // margin-left: 300px;
-    // margin-bottom: 0;
-    // margin-top: 20px;
-    // padding: 0;
-
   }
 
   .header__title--designer {
@@ -663,6 +657,42 @@ $skills-font-size-1024: 18px;
 }
 
 @media screen and (max-width: 600px){
+  .header__title--creative {
+    display: flex;
+    // justify-content:center;
+    font-family: Monument, Arial-bold, arial, sans-serif;
+    color: white;
+    text-shadow: $title-text-shadow;
+    margin: 0;
+    
+  }
+  
+  .header__title--designer {
+    display: flex;
+    justify-content: center;
+    font-family: Gallient, Times, serif;
+    color: white;
+    text-shadow: $title-text-shadow;
+    margin: 0;
+  }
+  
+  .header__title--developer {
+    display: flex;
+    justify-content: center;
+    font-family: Monument;
+    color: white;
+    text-shadow: $title-text-shadow;
+    margin: 0;
+  }
+
+  .rotate {
+    width: 130px;
+  }
+  .header__scroll {
+    padding: 0;
+    margin: 0;
+  }
+
   .section__about-me {
     display: flex;
     flex-direction: column;
@@ -700,4 +730,76 @@ $skills-font-size-1024: 18px;
   }
 
 
+}
+
+@media screen and (max-width: 380px){
+ .headline {
+   padding:0;
+ }
+
+ .header__scroll{
+   padding: 0;
+   margin:0;
+ }
+ 
+  .header__logo {
+   font-size: 12px;
+   justify-content: center;
+ }
+
+  .header__links{
+    opacity:0%;
+  }
+
+  .header__title--creative {
+        text-align:center;
+    margin: 0;
+    
+    
+  }
+  
+  .header__title--designer {
+  
+    text-align: center;
+   margin: 0;
+  }
+  
+  .header__title--developer {
+  
+    text-align: center;
+    
+    margin: 0;
+  }
+
+
+  .rotate {
+    height: 100px;
+    padding: 0;
+    margin: 0;
+  }
+  .projects__headline {
+    font-size: 26px;
+  }
+
+
+  .skills{
+    h4 {
+      align-items: center;
+    }
+  }
+
+  .contact {
+    .email {
+      font-size: 20px;
+    }
+
+    .email__link {
+      font-size: 20px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+  }
 }
