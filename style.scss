@@ -112,7 +112,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     display: flex;
     justify-content: flex-end;
     font-family: Monument;
-    font-size: calc(1em + 8vw);
+    font-size: calc(0.75em + 8vw);
     // font-size: $title-font-size;
     
     color: white;
@@ -732,7 +732,7 @@ $skills-font-size-1024: 18px;
 
 }
 
-@media screen and (max-width: 380px){
+@media screen and (max-width: 400px){
  .headline {
    padding:0;
  }
@@ -766,7 +766,7 @@ $skills-font-size-1024: 18px;
   
   .header__title--developer {
   
-    text-align: center;
+    justify-content: center;
     
     margin: 0;
   }
