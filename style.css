@@ -247,11 +247,13 @@
   display: -ms-flexbox;
   display: flex;
   max-width: 50%;
-  opacity: 50%;
   max-height: 50%;
+  opacity: 50%;
   padding: 10px;
   margin-left: 25%;
   border-radius: 30px;
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .projects__images:hover {
@@ -433,7 +435,7 @@
   padding: 50px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 600px) and (max-width: 1024px) {
   nav {
     color: black;
     height: 50px;
@@ -669,70 +671,6 @@
         -ms-flex-direction: row;
             flex-direction: row;
     padding: 40px;
-  }
-}
-
-@media screen and (min-width: 300px) {
-  .headline {
-    padding: 0;
-  }
-  .header__scroll {
-    padding: 0;
-    margin: 0;
-  }
-  .header__logo {
-    font-size: 12px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .header__links {
-    display: none;
-  }
-  .header__title--creative {
-    text-align: center;
-    margin: 0;
-  }
-  .header__title--designer {
-    text-align: center;
-    margin: 0;
-  }
-  .header__title--developer {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 0;
-  }
-  .section__about-me {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .rotate {
-    height: 100px;
-    padding: 0;
-    margin: 0;
-  }
-  .projects__headline {
-    font-size: 26px;
-  }
-  .projects__title {
-    text-align: center;
-  }
-  .skills h4 {
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .contact .email {
-    font-size: 20px;
-  }
-  .contact .email__link {
-    font-size: 20px;
-  }
-  .contact h3 {
-    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
