@@ -183,6 +183,12 @@
 }
 
 .section__about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.section__about-me--text {
   height: 700px;
   display: -ms-grid;
   display: grid;
@@ -486,7 +492,7 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .section__about-me {
+  .section__about-me--text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -501,7 +507,7 @@
         -ms-flex-pack: center;
             justify-content: center;
     height: 400px;
-    font-size: 1.125rem;
+    font-size: 1rem;
     margin: 0;
   }
   .section__about-me #about-me-p1 {
@@ -697,6 +703,11 @@
             justify-content: center;
     margin: 0;
   }
+  .section__about-me {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .rotate {
     height: 100px;
     padding: 0;
@@ -705,7 +716,11 @@
   .projects__headline {
     font-size: 26px;
   }
+  .projects__title {
+    text-align: center;
+  }
   .skills h4 {
+    text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

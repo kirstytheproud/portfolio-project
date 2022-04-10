@@ -162,6 +162,10 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 }
 
 .section__about-me {
+
+  display: flex;
+
+  &--text{
   height: 700px;
   display: grid;
   padding: 40px;
@@ -170,7 +174,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   grid-template-rows: repeat(2, 1fr);
   font-size: 24px;
   font-family: "Open Sans", sans-serif;
-
+  }
   #about-me-p1 {
     grid-area: 1/2/2/3;
     margin-top: 80px;
@@ -430,14 +434,17 @@ $skills-font-size-1024: 1.125rem;
   }
 
   //ABOUT ME SECTION
-  .section__about-me {
+  .section__about-me{
+  
+  &--text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 400px;
-    font-size: $skills-font-size-1024;
+    font-size: 1rem;
     margin: 0;
+  }
 
     #about-me-p1 {
       padding: 20px;
@@ -614,17 +621,29 @@ $skills-font-size-1024: 1.125rem;
     margin: 0;
   }
 
+  .section__about-me{
+    display: flex;
+  }
+
   .rotate {
     height: 100px;
     padding: 0;
     margin: 0;
   }
-  .projects__headline {
+
+  .projects {
+ &__headline {
     font-size: 26px;
   }
 
+  &__title {
+    text-align: center;
+  }
+
+}
   .skills {
     h4 {
+      text-align: center;
       align-items: center;
     }
   }
