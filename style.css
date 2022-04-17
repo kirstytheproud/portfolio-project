@@ -323,7 +323,7 @@
   /* (C2) POSITION */
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 50.75%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
@@ -393,6 +393,52 @@
   display: flex;
 }
 
+.design-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.design-skills img {
+  margin: 1rem;
+  max-width: 50px;
+}
+
+.tech-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tech-stack img {
+  margin: 1rem;
+  max-width: 50px;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -408,12 +454,12 @@
 }
 
 .contact .contact__title {
-  font-size: 5rem;
+  font-size: 2rem;
 }
 
 .contact h3 {
   padding: 30px;
-  font-size: 24px;
+  font-size: 1rem;
 }
 
 .contact a {
@@ -443,7 +489,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 600px) {
@@ -494,14 +547,14 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 4rem;
     padding: 20px;
   }
   .projects__titles {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    font-size: 3rem;
+    font-size: 2.25rem;
     margin: 0px;
   }
   .projects__title {
@@ -517,25 +570,25 @@
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    font-size: 3rem;
+    font-size: 2.25rem;
     padding: 0px;
     padding-right: 20px;
   }
   .skills {
     font-family: "Monument", sans-serif;
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .skills h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .skills h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
   .skills #skills {
     display: -webkit-box;
@@ -543,31 +596,52 @@
     display: flex;
     font-size: 1.125rem;
   }
-  .contact .contact__title {
-    font-size: 4.5rem;
+  .design-skills {
+    margin: 0 20px;
   }
-  .contact h3 {
-    padding: 30px;
+  .design-skills img {
+    margin: 1rem;
+    max-width: 96px;
   }
-  .contact .email__link {
-    text-decoration: none;
-  }
-  .contact .btn {
-    padding: 10px 36px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 10px;
-  }
-  .social-media__icons i {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 50px;
-  }
+}
+
+.tech-stack {
+  margin: 0 20px;
+}
+
+.tech-stack img {
+  margin: 1rem;
+  max-width: 96px;
+}
+
+.contact .contact__title {
+  font-size: 4rem;
+}
+
+.contact h3 {
+  padding: 30px;
+}
+
+.contact .email__link {
+  text-decoration: none;
+}
+
+.contact .btn {
+  padding: 10px 36px;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.social-media__icons i {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 50px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -609,7 +683,7 @@
             justify-content: flex-end;
   }
   .projects__headline {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .projects__images {
     display: -webkit-box;
@@ -674,7 +748,7 @@
     padding: 30px;
   }
   .skills h2 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .skills h3 {
     font-size: 4rem;

@@ -273,7 +273,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     /* (C2) POSITION */
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 50.75%;
     transform: translate(-50%, -50%);
     text-align: center;
     align-content: center;
@@ -328,6 +328,32 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   }
 }
 
+.design-skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+ img { 
+   margin: 1rem;
+   max-width: 50px;
+ }
+}
+
+.tech-stack{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+ 
+ img { 
+   margin: 1rem;
+   max-width: 50px;
+ }
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -335,12 +361,12 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   align-items: center;
 
   .contact__title {
-    font-size: $heading-font-size;
+    font-size: 2rem;
   }
 
   h3 {
     padding: 30px;
-    font-size: 24px;
+    font-size: 1rem;
   }
   a {
     text-decoration: none;
@@ -367,10 +393,12 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
 .social-media__icons {
   i {
-    display: inline-flex;
+    display:inline-flex;
     flex-direction: row;
-
-    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
   }
 }
 
@@ -381,8 +409,8 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 // MEDIA QUERY ADJUSTMENTS
 
 //max-width 1024px
-$heading-font-size-1024: 4.5rem;
-$project-font-size-1024: 3rem;
+$heading-font-size-1024: 4rem;
+$project-font-size-1024: 2.25rem;
 $skills-font-size-1024: 1.125rem;
 $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
@@ -486,7 +514,30 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
       font-size: $skills-font-size-1024;
     }
   }
+// .tech-stack{
+//   // display: flex;
+//   // flex-direction: row;
+//   // justify-content: center;
+//   // align-items: center;
+//   // flex-wrap: wrap;
+//   max-width: 50%;
 
+.design-skills{
+  margin: 0 20px;
+  img { 
+      margin: 1rem;
+      max-width: 96px;
+    }
+  }
+}
+
+.tech-stack{
+  margin: 0 20px;
+img { 
+    margin: 1rem;
+    max-width: 96px;
+  }
+}
   // CONTACT SECTION
   .contact {
     .contact__title {
@@ -517,7 +568,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
       padding: 50px;
     }
   }
-}
+
 
 //MEDIA QUERY DESKTOP
 
