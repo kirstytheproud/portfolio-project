@@ -98,7 +98,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     .header__title--developer {
       display: flex;
       justify-content: center;
-      font-family: Monument;
+      font-family: Monument, Arial-bold, arial, sans-serif;
       font-size: calc(0.75em + 8vw);
       color: white;
       text-shadow: $title-text-shadow;
