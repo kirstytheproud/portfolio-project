@@ -125,7 +125,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: Monument;
+  font-family: Monument, Arial-bold, arial, sans-serif;
   font-size: calc(0.75em + 8vw);
   color: white;
   text-shadow: 0px 4px 5px #b3b3b3;
@@ -227,6 +227,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 20px;
   /* (B) RESPONSIVE IMAGE */
   /* (C) CAPTION */
 }
@@ -241,6 +242,7 @@
   border-radius: 30px;
   max-width: 80%;
   max-height: 80%;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   opacity: 0.8;
@@ -305,13 +307,19 @@
 
 .projects .fullwrap {
   position: relative;
-  /* required for (c2) */
+}
+
+.projects .fullwrap img {
+  width: 100%;
 }
 
 .projects .fullcap {
   /* (C1) DIMENSIONS */
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%;
+  padding: 20px 10px;
   /* (C2) POSITION */
   position: absolute;
   top: 50%;
@@ -329,7 +337,7 @@
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .projects .fullwrap:hover .fullcap {
@@ -583,10 +591,6 @@
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    font-family: Monument, Arial-bold, arial, sans-serif;
-    color: white;
-    text-shadow: 0px 4px 5px #b3b3b3;
-    font-size: calc(1em + 8vw);
   }
   .headline .header__title--designer {
     display: -webkit-box;
@@ -595,12 +599,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-left: 80px;
-    padding: 0;
-    font-family: Gallient, Times, serif;
-    font-size: calc(1em + 8vw);
-    color: white;
-    text-shadow: 0px 4px 5px #b3b3b3;
   }
   .headline .header__title--developer {
     display: -webkit-box;
@@ -609,10 +607,6 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    font-family: Monument;
-    font-size: calc(0.75em + 8vw);
-    color: white;
-    text-shadow: 0px 4px 5px #b3b3b3;
   }
   .projects__headline {
     font-size: 4.5rem;

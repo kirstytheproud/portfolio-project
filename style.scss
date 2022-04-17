@@ -22,7 +22,6 @@ $project-font-size: 4rem;
 $skills-font-size: 2.25rem;
 $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
-
 .header__landing-page {
   background-image: url("img/hero.svg");
   background-size: cover;
@@ -43,9 +42,6 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
     .header__logo {
       width: 30%;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
     }
 
     .header__links {
@@ -87,7 +83,6 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
       justify-content: center;
       align-items: center;
       text-align: center;
-      // margin-left: 80px;
       padding: 0;
       font-family: Gallient, Times, serif;
       font-size: calc(1em + 8vw);
@@ -109,10 +104,9 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 .header__scroll {
   display: inline-flex;
   justify-content: center;
-//  margin-bottom: 40px;
 }
 .rotate {
- // width: 150px;
+  // width: 150px;
   //height: 150px;
   // width: 2rem;
   // height: 2rem;
@@ -173,8 +167,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 }
 
 //ABOUT ME SECTION
- .section__about-me{
-  
+.section__about-me {
   &--text {
     display: flex;
     flex-direction: column;
@@ -185,17 +178,15 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     margin: 0;
   }
 
-    #about-me-p1 {
-      padding: 20px;
-      margin-top: 0;
-    }
-
-    #about-me-p2 {
-      padding: 20px;
-      // padding-bottom: 20px;
-    }
+  #about-me-p1 {
+    padding: 20px;
+    margin-top: 0;
   }
 
+  #about-me-p2 {
+    padding: 20px;
+  }
+}
 
 .body__background--gradient {
   background-image: url("img/body.svg");
@@ -221,10 +212,6 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     margin-right: auto;
     opacity: 0.8;
   }
-
-  // &__images:hover {
-  //   opacity: 100%;
-  // }
 
   .projects__headline {
     display: flex;
@@ -252,43 +239,36 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   &__titles {
     display: inline-flex;
     justify-content: center;
-      flex-direction: column;
-    // font-size: $project-font-size;
-    // 
-    //   padding: 30px;
+    flex-direction: column;
   }
 
-  &__title{
+  &__title {
     display: inline-flex;
     justify-content: center;
   }
 
- 
-
   &__numbers {
     display: inline-block;
-    // font-size: $skills-font-size;
     font-size: 1rem;
     padding-top: 30px;
   }
 
-  
   .fullwrap {
-    position: relative; /* required for (c2) */
-    // max-width: 500px;   /* optional */
+    position: relative;
   }
 
   /* (B) RESPONSIVE IMAGE */
-  // .fullwrap img {
-  //   width: 100%;
-  // }
+  .fullwrap img {
+    width: 100%;
+  }
 
   /* (C) CAPTION */
   .fullcap {
     /* (C1) DIMENSIONS */
     box-sizing: border-box;
-    // max-width: 100%;
-    // max-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 20px 10px;
 
     /* (C2) POSITION */
     position: absolute;
@@ -297,7 +277,6 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     transform: translate(-50%, -50%);
     text-align: center;
     align-content: center;
-    // padding: 30%;
 
     /* (C3) COLORS */
     background-color: rgba(0, 0, 0, 0.7);
@@ -307,14 +286,13 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     visibility: none;
     opacity: 0;
     transition: opacity 0.3s;
-    border-radius: 30px;
+    border-radius: 10px;
   }
 
   .fullwrap:hover .fullcap {
     visibility: visible;
     opacity: 1;
   }
-
 }
 
 //SKILLS SECTION
@@ -327,23 +305,20 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   padding: 30px;
 
   h2 {
-    // font-size: $heading-font-size;
     font-size: 2rem;
   }
 
   h3 {
-    // font-size: $project-font-size;
     font-size: 2rem;
     padding: 30px;
     justify-content: center;
   }
 
   #skills {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-content: center;
     text-align: center;
-    // font-size: $skills-font-size;
     font-size: 1rem;
     padding: 20px;
   }
@@ -364,7 +339,6 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   }
 
   h3 {
-    // margin: 30px;
     padding: 30px;
     font-size: 24px;
   }
@@ -400,7 +374,6 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   }
 }
 
-
 // $heading-font-size: 160px;
 // $project-font-size: 96px;
 // $skills-font-size: 36px;
@@ -413,29 +386,29 @@ $project-font-size-1024: 3rem;
 $skills-font-size-1024: 1.125rem;
 $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
   //NAVBAR
-  .header__landing-page{
-  nav {
-    .header__logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-left: 20px;
-    }
+  .header__landing-page {
+    nav {
+      .header__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+      }
 
-    .header__links {
-      visibility: visible;
-      width: 45%;
-      display: flex;
-
-      a {
+      .header__links {
         visibility: visible;
-        font-size: 1rem;
+        width: 45%;
+        display: flex;
+
+        a {
+          visibility: visible;
+          font-size: 1rem;
+        }
       }
     }
   }
-}
 
   //MAIN HEADER
 
@@ -461,9 +434,9 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     margin: 30px;
     padding: 30px;
 
-&__images{
-  margin-top: 40px;
-}
+    &__images {
+      margin-top: 40px;
+    }
 
     &__headline {
       display: inline-flex;
@@ -478,12 +451,11 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
       margin: 0px;
     }
 
-      &__title {
+    &__title {
       display: inline-flex;
       justify-content: center;
       margin: 0px;
     }
-
 
     &__numbers {
       display: inline-flex;
@@ -498,7 +470,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   .skills {
     font-family: $body-font-family;
     font-size: $heading-font-size-1024;
-  
+
     h2 {
       display: flex;
       font-size: $heading-font-size-1024;
@@ -545,123 +517,98 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
       padding: 50px;
     }
   }
-
 }
-
 
 //MEDIA QUERY DESKTOP
 
-
 @media screen and (min-width: 1024px) {
-
   .headline {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 100px 50px;
 
-
     .header__title--creative {
       display: flex;
       justify-content: flex-start;
-      font-family: Monument, Arial-bold, arial, sans-serif;
-      color: white;
-      text-shadow: $title-text-shadow;
-      font-size: calc(1em + 8vw);
     }
 
     .header__title--designer {
       display: flex;
       justify-content: center;
-      margin-left: 80px;
-      padding: 0;
-      font-family: Gallient, Times, serif;
-      font-size: calc(1em + 8vw);
-      color: white;
-      text-shadow: $title-text-shadow;
     }
 
     .header__title--developer {
       display: flex;
       justify-content: flex-end;
-      font-family: Monument;
-      font-size: calc(0.75em + 8vw);
-      color: white;
-      text-shadow: $title-text-shadow;
     }
   }
-.projects{
-  &__headline {
-    font-size: $heading-font-size-1024;
-  }
+  .projects {
+    &__headline {
+      font-size: $heading-font-size-1024;
+    }
 
-  &__images {
-    display: flex;
-    max-width: 50%;
-    max-height: 50%;
-    opacity: 50%;
-    padding: 10px;
-    margin-left:25%;
-    border-radius: 30px;
-    // width: 500px; 
-    // height: 337px;
-     
-    object-fit: fill;
+    &__images {
+      display: flex;
+      max-width: 50%;
+      max-height: 50%;
+      opacity: 50%;
+      padding: 10px;
+      margin-left: 25%;
+      border-radius: 30px;
+      object-fit: fill;
+    }
   }
-}
   .section__about-me {
-
-  display: flex;
-
-  &--text{
-  height: 700px;
-  display: grid;
-  padding: 40px;
-  margin: 30px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  font-size: 24px;
-  font-family: "Open Sans", sans-serif;
-  }
-  #about-me-p1 {
-    grid-area: 1/2/2/3;
-    margin-top: 80px;
-  }
-
-  #about-me-p2 {
-    grid-area: 2/1/3/2;
-  }
-}
-
-.skills {
-  font-family: $body-font-family;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-size: 96px;
-  margin: 30px;
-  padding: 30px;
-
-  h2 {
-    font-size: $heading-font-size-1024;
-  }
-
-  h3 {
-    font-size: $project-font-size;
-    padding: 30px;
-    justify-content: center;
-  }
-
-  #skills {
-    display:flex;
-    font-size: $skills-font-size;
-    padding: 20px;
-  }
-
-  .lines {
     display: flex;
+
+    &--text {
+      height: 700px;
+      display: grid;
+      padding: 40px;
+      margin: 30px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      font-size: 24px;
+      font-family: "Open Sans", sans-serif;
+    }
+    #about-me-p1 {
+      grid-area: 1/2/2/3;
+      margin-top: 80px;
+    }
+
+    #about-me-p2 {
+      grid-area: 2/1/3/2;
+    }
   }
-}
 
+  .skills {
+    font-family: $body-font-family;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 96px;
+    margin: 30px;
+    padding: 30px;
 
+    h2 {
+      font-size: $heading-font-size-1024;
+    }
+
+    h3 {
+      font-size: $project-font-size;
+      padding: 30px;
+      justify-content: center;
+    }
+
+    #skills {
+      display: flex;
+      font-size: $skills-font-size;
+      padding: 20px;
+    }
+
+    .lines {
+      display: flex;
+    }
+  }
 }
