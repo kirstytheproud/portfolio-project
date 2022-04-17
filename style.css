@@ -141,8 +141,8 @@
 }
 
 .rotate {
-  width: 3rem;
-  height: 3rem;
+  width: calc(1.75em + 8vw);
+  height: calc(1.75em + 8vh);
   -webkit-animation-name: spin;
   -webkit-animation-duration: 9000ms;
   -webkit-animation-iteration-count: infinite;
@@ -227,7 +227,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 20px;
   /* (B) RESPONSIVE IMAGE */
   /* (C) CAPTION */
 }
@@ -244,10 +243,7 @@
   max-height: 80%;
   margin-left: auto;
   margin-right: auto;
-}
-
-.projects__images:hover {
-  opacity: 100%;
+  opacity: 0.8;
 }
 
 .projects .projects__headline {
@@ -443,7 +439,7 @@
 }
 
 @media screen and (min-width: 600px) {
-  nav .header__logo {
+  .header__landing-page nav .header__logo {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -455,14 +451,14 @@
             align-items: center;
     margin-left: 20px;
   }
-  nav .header__links {
+  .header__landing-page nav .header__links {
     visibility: visible;
     width: 45%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  nav .header__links a {
+  .header__landing-page nav .header__links a {
     visibility: visible;
     font-size: 1rem;
   }
@@ -478,30 +474,29 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .rotate {
-    width: 4.5rem;
-    height: 4.5rem;
-  }
-  .rotate .projects {
+  .projects {
     margin: 30px;
     padding: 30px;
   }
-  .rotate .projects__headline {
+  .projects__images {
+    margin-top: 40px;
+  }
+  .projects__headline {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     padding: 20px;
   }
-  .rotate .projects__titles {
+  .projects__titles {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0px;
   }
-  .rotate .projects__title {
+  .projects__title {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -510,57 +505,64 @@
             justify-content: center;
     margin: 0px;
   }
-  .rotate .projects__numbers {
+  .projects__numbers {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding: 0px;
     padding-right: 20px;
   }
-  .rotate .skills {
+  .skills {
     font-family: "Monument", sans-serif;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
-  .rotate .skills h2 {
+  .skills h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
-  .rotate .skills h3 {
+  .skills h3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
-  .rotate .skills #skills {
+  .skills #skills {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     font-size: 1.125rem;
   }
-  .rotate .contact .contact__title {
-    font-size: 3.5rem;
+  .contact .contact__title {
+    font-size: 4.5rem;
   }
-  .rotate .contact h3 {
+  .contact h3 {
     padding: 30px;
   }
-  .rotate .contact .email__link {
+  .contact .email__link {
     text-decoration: none;
   }
-  .rotate .contact .btn {
+  .contact .btn {
     padding: 10px 36px;
     text-decoration: none;
     font-size: 16px;
     border-radius: 10px;
   }
-  .rotate .social-media__icons i {
-    padding: 40px;
+  .social-media__icons i {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 50px;
   }
 }
 
-@media screen and (min-width: 600px) and (min-width: 1000px) {
+@media screen and (min-width: 1024px) {
   .headline {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -569,7 +571,10 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 50px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 100px 50px;
   }
   .headline .header__title--creative {
     display: -webkit-box;
@@ -608,6 +613,9 @@
     font-size: calc(0.75em + 8vw);
     color: white;
     text-shadow: 0px 4px 5px #b3b3b3;
+  }
+  .projects__headline {
+    font-size: 4.5rem;
   }
   .projects__images {
     display: -webkit-box;
@@ -672,7 +680,7 @@
     padding: 30px;
   }
   .skills h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   .skills h3 {
     font-size: 4rem;
