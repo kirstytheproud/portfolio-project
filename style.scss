@@ -9,6 +9,11 @@
   font-weight: lighter;
 }
 
+@font-face {
+  font-family: IBM Mono;
+  src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+  }
+
 * {
   margin: 0;
   padding: 0;
@@ -38,7 +43,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     font-weight: normal;
     display: flex;
     justify-content: space-between;
-    font-family: "Open Sans", sans-serif;
+    font-family: "IBM Mono", monospace;
 
     .header__logo {
       width: 30%;
@@ -274,6 +279,8 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     transform: translate(-50%, -50%);
     text-align: center;
     align-content: center;
+    font-family: "IBM Mono", monospace;
+    font-size: 1.5rem;
 
     /* (C3) COLORS */
     background-color: rgba(0, 0, 0, 0.7);
@@ -352,11 +359,19 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
   .contact__title {
     font-size: 1rem;
+    text-align: center;
   }
 
-  h3 {
+  .email {
     padding: 30px;
     font-size: 1rem;
+    text-align: center;
+  }
+
+  .email__link {
+    padding: 30px;
+    font-size: 1rem;
+    text-align: center;
   }
   a {
     text-decoration: none;
@@ -372,7 +387,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     text-decoration: none;
     display: inline-block;
     font-size: 20px;
-    font-family: $body-font-family;
+    font-family: "IBM Mono", monospace;
     border-radius: 50px;
     cursor: pointer;
   }
@@ -384,7 +399,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    // margin: 20px;
     padding: 10px;
   }
 }
@@ -529,7 +544,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   i {
     display: inline-flex;
     flex-direction: row;
-    padding: 50px;
+    padding: 40px;
   }
 }
 
@@ -543,16 +558,19 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
     .header__title--creative {
       display: flex;
+      align-items: flex-start;
       justify-content: flex-start;
     }
 
     .header__title--designer {
       display: flex;
+      align-items: center;
       justify-content: center;
     }
 
     .header__title--developer {
       display: flex;
+      align-items: flex-end;
       justify-content: flex-end;
     }
   }
@@ -583,7 +601,8 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
       font-size: 24px;
-      font-family: "Open Sans", sans-serif;
+      font-family: "IBM Mono", monospace;
+      line-height: 150%;
     }
     #about-me-p1 {
       grid-area: 1/2/2/3;

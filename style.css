@@ -9,6 +9,11 @@
   font-weight: lighter;
 }
 
+@font-face {
+  font-family: IBM Mono;
+  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +45,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: "Open Sans", sans-serif;
+  font-family: "IBM Mono", monospace;
 }
 
 .header__landing-page nav .header__logo {
@@ -330,6 +335,8 @@
   text-align: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  font-family: "IBM Mono", monospace;
+  font-size: 1.5rem;
   /* (C3) COLORS */
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
@@ -445,12 +452,20 @@
 }
 
 .contact .contact__title {
-  font-size: 2rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
-.contact h3 {
+.contact .email {
   padding: 30px;
   font-size: 1rem;
+  text-align: center;
+}
+
+.contact .email__link {
+  padding: 30px;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .contact a {
@@ -467,7 +482,7 @@
   text-decoration: none;
   display: inline-block;
   font-size: 20px;
-  font-family: "Monument", sans-serif;
+  font-family: "IBM Mono", monospace;
   border-radius: 50px;
   cursor: pointer;
 }
@@ -486,7 +501,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 20px;
   padding: 10px;
 }
 
@@ -625,7 +639,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 50px;
+  padding: 40px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -646,6 +660,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -654,6 +671,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -662,6 +682,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
@@ -698,7 +721,8 @@
     -ms-grid-rows: (1fr)[2];
         grid-template-rows: repeat(2, 1fr);
     font-size: 24px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "IBM Mono", monospace;
+    line-height: 150%;
   }
   .section__about-me #about-me-p1 {
     -ms-grid-row: 1;
