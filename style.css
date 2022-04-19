@@ -326,10 +326,10 @@
 
 .projects .fullcap {
   /* (C1) DIMENSIONS */
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  max-width: 100%;
-  max-height: 100%;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  min-width: 100%;
+  max-height: 75%;
   padding: 20px 10px;
   /* (C2) POSITION */
   position: absolute;
@@ -713,6 +713,10 @@
   .projects .fullcap {
     font-size: 1.5rem;
     padding: 20px 30px;
+    max-width: 100%;
+    max-height: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .section__about-me {
     display: -webkit-box;

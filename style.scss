@@ -269,9 +269,9 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   /* (C) CAPTION */
   .fullcap {
     /* (C1) DIMENSIONS */
-    box-sizing: border-box;
-    max-width: 100%;
-    max-height: 100%;
+    box-sizing: content-box;
+    min-width: 100%;
+    max-height: 75%;
     padding: 20px 10px;
 
     /* (C2) POSITION */
@@ -595,6 +595,9 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     .fullcap{
       font-size: 1.5rem;
       padding: 20px 30px;
+      max-width: 100%;
+      max-height: 100%;
+      box-sizing: border-box;
     }
   
   }
