@@ -214,6 +214,10 @@
   color: black;
 }
 
+.section__about-me--text a:active {
+  color: black;
+}
+
 .section__about-me #about-me-p1 {
   padding: 1rem;
   margin-top: 0;
