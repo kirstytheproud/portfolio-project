@@ -11,8 +11,8 @@
 
 @font-face {
   font-family: IBM Mono;
-  src: url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
-  }
+  src: url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+}
 
 * {
   margin: 0;
@@ -179,6 +179,10 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     font-size: 1rem;
     margin: 0;
     font-family: "IBM Mono", monospace;
+
+    a {
+      color:black;
+    }
   }
 
   #about-me-p1 {
@@ -592,14 +596,13 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
       object-fit: fill;
     }
 
-    .fullcap{
+    .fullcap {
       font-size: 1.5rem;
       padding: 20px 30px;
       max-width: 100%;
       max-height: 100%;
       box-sizing: border-box;
     }
-  
   }
   .section__about-me {
     display: flex;
@@ -625,8 +628,6 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
       // margin-bottom: 1rem;
     }
   }
-
-
 
   .skills {
     font-family: $body-font-family;

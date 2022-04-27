@@ -210,6 +210,10 @@
   font-family: "IBM Mono", monospace;
 }
 
+.section__about-me--text a {
+  color: black;
+}
+
 .section__about-me #about-me-p1 {
   padding: 1rem;
   margin-top: 0;
