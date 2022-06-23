@@ -181,11 +181,11 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     font-family: "IBM Mono", monospace;
 
     a {
-      color:black;
+      color: black;
     }
 
     a:active {
-      color:black;
+      color: black;
     }
   }
 
@@ -236,11 +236,12 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   a {
     text-decoration: none;
     color: black;
+    border: none;
   }
 
-  a:hover {
-    color: purple;
-  }
+  // a:hover {
+  //   color: purple;
+  // }
 
   a:visited {
     text-decoration: none;
@@ -262,7 +263,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   &__numbers {
     display: inline-block;
     font-size: 1rem;
-    padding-top: 0.75rem;
+    // padding-top: 0.75rem;
   }
 
   .fullwrap {
@@ -281,11 +282,12 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     // min-width: 100%;
     // max-height: 75%;
     padding: 20px 10px;
+    width: 280px;
 
     /* (C2) POSITION */
     position: absolute;
     top: 50%;
-    left: 50.75%;
+    left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     align-content: center;
@@ -301,6 +303,19 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     opacity: 0;
     transition: opacity 0.3s;
     border-radius: 10px;
+
+    button {
+      background-color: #4a1d71;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      margin-top: 20px;
+      font-weight: 500;
+    }
+
+    button:hover {
+      background-color: #7f34c1;
+    }
   }
 
   .fullwrap:hover .fullcap {
@@ -368,7 +383,7 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
   align-items: center;
 
   .contact__title {
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: center;
   }
 
@@ -387,30 +402,44 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
     text-decoration: none;
     color: #5b3f9e;
   }
+}
 
-  .btn {
-    background-color: #5b3f9e;
+.social-media__icons {
+  img {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    padding: 10px;
+    margin: 20px 0;
+  }
+}
+
+.cv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__btn {
+    // background-color: #5b3f9e;
+    background-color: black;
     border: none;
     color: white;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px;
-    font-family: "IBM Mono", monospace;
-    border-radius: 50px;
+    font-size: 15px;
+    font-family: $body-font-family;
+    border-radius: 5px;
     cursor: pointer;
-  }
-}
-
-.social-media__icons {
-  i {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    // margin: 20px;
-    padding: 10px;
   }
 }
 
@@ -526,35 +555,36 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
       }
     }
   }
-}
 
-// CONTACT SECTION
-.contact {
-  .contact__title {
-    font-size: $heading-font-size-1024;
+  // CONTACT SECTION
+  .contact {
+    .contact__title {
+      font-size: $heading-font-size-1024;
+    }
+
+    h3 {
+      padding: 30px;
+      font-size: 1.5rem;
+    }
+    .email__link {
+      text-decoration: none;
+    }
+
+    .btn {
+      padding: 20px 50px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      border-radius: 50px;
+    }
   }
 
-  h3 {
-    padding: 30px;
-    font-size: 1.5rem;
-  }
-  .email__link {
-    text-decoration: none;
-  }
-
-  .btn {
-    padding: 20px 50px;
-    text-decoration: none;
-    font-size: 1.5rem;
-    border-radius: 50px;
-  }
-}
-
-.social-media__icons {
-  i {
-    display: inline-flex;
-    flex-direction: row;
-    padding: 40px;
+  .social-media__icons {
+    img {
+      display: inline-flex;
+      flex-direction: row;
+      padding: 40px;
+      width: 50px;
+    }
   }
 }
 
@@ -602,9 +632,8 @@ $title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
 
     .fullcap {
       font-size: 1.5rem;
-      padding: 20px 30px;
-      max-width: 100%;
-      max-height: 100%;
+      padding: 30px 20px;
+      width: 800px;
       box-sizing: border-box;
     }
   }

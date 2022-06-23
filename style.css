@@ -284,10 +284,7 @@
 .projects a {
   text-decoration: none;
   color: black;
-}
-
-.projects a:hover {
-  color: purple;
+  border: none;
 }
 
 .projects a:visited {
@@ -321,7 +318,6 @@
 .projects__numbers {
   display: inline-block;
   font-size: 1rem;
-  padding-top: 0.75rem;
 }
 
 .projects .fullwrap {
@@ -335,10 +331,11 @@
 .projects .fullcap {
   /* (C1) DIMENSIONS */
   padding: 20px 10px;
+  width: 280px;
   /* (C2) POSITION */
   position: absolute;
   top: 50%;
-  left: 50.75%;
+  left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   text-align: center;
@@ -355,6 +352,19 @@
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
   border-radius: 10px;
+}
+
+.projects .fullcap button {
+  background-color: #4a1d71;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.projects .fullcap button:hover {
+  background-color: #7f34c1;
 }
 
 .projects .fullwrap:hover .fullcap {
@@ -461,7 +471,7 @@
 }
 
 .contact .contact__title {
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -482,21 +492,7 @@
   color: #5b3f9e;
 }
 
-.contact .btn {
-  background-color: #5b3f9e;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  font-family: "IBM Mono", monospace;
-  border-radius: 50px;
-  cursor: pointer;
-}
-
-.social-media__icons i {
+.social-media__icons img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -510,7 +506,45 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 50px;
   padding: 10px;
+  margin: 20px 0;
+}
+
+.cv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.cv__title {
+  margin-bottom: 20px;
+}
+
+.cv__btn {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Monument", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 600px) {
@@ -618,37 +652,33 @@
     margin: 1rem;
     max-width: 96px;
   }
-}
-
-.contact .contact__title {
-  font-size: 4rem;
-}
-
-.contact h3 {
-  padding: 30px;
-  font-size: 1.5rem;
-}
-
-.contact .email__link {
-  text-decoration: none;
-}
-
-.contact .btn {
-  padding: 20px 50px;
-  text-decoration: none;
-  font-size: 1.5rem;
-  border-radius: 50px;
-}
-
-.social-media__icons i {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding: 40px;
+  .contact .contact__title {
+    font-size: 4rem;
+  }
+  .contact h3 {
+    padding: 30px;
+    font-size: 1.5rem;
+  }
+  .contact .email__link {
+    text-decoration: none;
+  }
+  .contact .btn {
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 50px;
+  }
+  .social-media__icons img {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 40px;
+    width: 50px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -716,9 +746,8 @@
   }
   .projects .fullcap {
     font-size: 1.5rem;
-    padding: 20px 30px;
-    max-width: 100%;
-    max-height: 100%;
+    padding: 30px 20px;
+    width: 800px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
