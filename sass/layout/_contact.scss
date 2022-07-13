@@ -76,3 +76,43 @@
       cursor: pointer;
     }
   }
+
+  @media screen and (min-width: 600px) {
+    // CONTACT SECTION
+    .contact {
+      .contact__title {
+        font-size: $heading-font-size-1024;
+      }
+  
+      h3 {
+        padding: 30px;
+        font-size: 1.5rem;
+      }
+      .email__link {
+        text-decoration: none;
+      }
+  
+      .btn {
+        padding: 20px 50px;
+        text-decoration: none;
+        font-size: 1.5rem;
+        border-radius: 50px;
+      }
+  
+      .social-media__icons {
+        display: flex;
+        flex-direction: row;
+  
+        a {
+          margin: 20px 50px;
+          img {
+            display: inline-flex;
+            flex-direction: row;
+            padding: 10px;
+            width: 50px;
+            margin: 0 50px;
+          }
+        }
+      }
+    }
+  }

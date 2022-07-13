@@ -49,3 +49,38 @@
     }
   }
 }
+
+
+@media screen and (min-width: 600px) {
+  // SKILLS SECTION
+
+  .skills {
+    font-family: $body-font-family;
+    font-size: $heading-font-size-1024;
+
+    h2 {
+      display: flex;
+      font-size: $heading-font-size-1024;
+    }
+
+    h3 {
+      display: flex;
+      font-size: $project-font-size-1024;
+    }
+    .design-skills {
+      margin: 0 20px;
+      img {
+        margin: 1rem;
+        max-width: 96px;
+      }
+    }
+
+    .tech-stack {
+      margin: 0 20px;
+      img {
+        margin: 1rem;
+        max-width: 96px;
+      }
+    }
+  }
+}

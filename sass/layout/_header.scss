@@ -137,3 +137,38 @@
       transform: rotate(360deg);
     }
   }
+
+
+  @media screen and (min-width: 600px) {
+      //NAVBAR
+  .header__landing-page {
+    nav {
+      .header__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+      }
+
+      .header__links {
+        visibility: visible;
+        width: 45%;
+        display: flex;
+
+        a {
+          visibility: visible;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  //MAIN HEADER
+
+  .headline {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    // position: relative;
+  }
+}

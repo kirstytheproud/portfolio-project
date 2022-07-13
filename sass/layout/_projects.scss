@@ -116,3 +116,41 @@
       opacity: 1;
     }
   }
+
+  @media screen and (min-width: 600px) {
+  //PROJECTS SECTION
+  .projects {
+    margin: 30px;
+    padding: 30px;
+
+    &__images {
+      margin-top: 40px;
+    }
+
+    &__headline {
+      display: inline-flex;
+      text-align: center;
+      font-size: $heading-font-size-1024;
+      padding: 20px;
+    }
+
+    &__titles {
+      display: inline-flex;
+      font-size: $project-font-size-1024;
+      margin: 0px;
+    }
+
+    &__title {
+      display: inline-flex;
+      justify-content: center;
+      margin: 0px;
+    }
+
+    &__numbers {
+      display: inline-flex;
+      font-size: $project-font-size-1024;
+      padding: 0px;
+      padding-right: 20px;
+    }
+  }
+  }
