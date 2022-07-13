@@ -1,0 +1,268 @@
+@import "base/reset";
+@import "base/typography";
+@import "abstracts/variables";
+@import "layout/header";
+@import "layout/about";
+@import "layout/projects";
+@import "layout/skills";
+@import "layout/contact";
+
+
+
+
+// $heading-font-size: 160px;
+// $project-font-size: 96px;
+// $skills-font-size: 36px;
+
+// MEDIA QUERY ADJUSTMENTS
+
+//max-width 1024px
+$heading-font-size-1024: 4rem;
+$project-font-size-1024: 2.25rem;
+$skills-font-size-1024: 1.125rem;
+$title-text-shadow: 0px 4px 5px rgb(179, 179, 179);
+
+@media screen and (min-width: 600px) {
+  //NAVBAR
+  .header__landing-page {
+    nav {
+      .header__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+      }
+
+      .header__links {
+        visibility: visible;
+        width: 45%;
+        display: flex;
+
+        a {
+          visibility: visible;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  //MAIN HEADER
+
+  .headline {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    // position: relative;
+  }
+
+  //PROJECTS SECTION
+  .projects {
+    margin: 30px;
+    padding: 30px;
+
+    &__images {
+      margin-top: 40px;
+    }
+
+    &__headline {
+      display: inline-flex;
+      text-align: center;
+      font-size: $heading-font-size-1024;
+      padding: 20px;
+    }
+
+    &__titles {
+      display: inline-flex;
+      font-size: $project-font-size-1024;
+      margin: 0px;
+    }
+
+    &__title {
+      display: inline-flex;
+      justify-content: center;
+      margin: 0px;
+    }
+
+    &__numbers {
+      display: inline-flex;
+      font-size: $project-font-size-1024;
+      padding: 0px;
+      padding-right: 20px;
+    }
+  }
+
+  // SKILLS SECTION
+
+  .skills {
+    font-family: $body-font-family;
+    font-size: $heading-font-size-1024;
+
+    h2 {
+      display: flex;
+      font-size: $heading-font-size-1024;
+    }
+
+    h3 {
+      display: flex;
+      font-size: $project-font-size-1024;
+    }
+    .design-skills {
+      margin: 0 20px;
+      img {
+        margin: 1rem;
+        max-width: 96px;
+      }
+    }
+
+    .tech-stack {
+      margin: 0 20px;
+      img {
+        margin: 1rem;
+        max-width: 96px;
+      }
+    }
+  }
+
+  // CONTACT SECTION
+  .contact {
+    .contact__title {
+      font-size: $heading-font-size-1024;
+    }
+
+    h3 {
+      padding: 30px;
+      font-size: 1.5rem;
+    }
+    .email__link {
+      text-decoration: none;
+    }
+
+    .btn {
+      padding: 20px 50px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      border-radius: 50px;
+    }
+
+    .social-media__icons {
+      display: flex;
+      flex-direction: row;
+
+      a {
+        margin: 20px 50px;
+        img {
+          display: inline-flex;
+          flex-direction: row;
+          padding: 10px;
+          width: 50px;
+          margin: 0 50px;
+        }
+      }
+    }
+  }
+}
+
+//MEDIA QUERY DESKTOP
+@media screen and (min-width: 1024px) {
+  .headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 50px;
+
+    .header__title--creative {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .header__title--designer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header__title--developer {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+  .projects {
+    &__headline {
+      font-size: $heading-font-size-1024;
+    }
+
+    &__images {
+      display: flex;
+      max-width: 50%;
+      max-height: 50%;
+      opacity: 50%;
+      padding: 10px;
+      margin-left: 25%;
+      border-radius: 30px;
+      object-fit: fill;
+    }
+
+    .fullcap {
+      font-size: 1.5rem;
+      padding: 30px 20px;
+      width: 800px;
+      box-sizing: border-box;
+    }
+  }
+  .section__about-me {
+    display: flex;
+
+    &--text {
+      height: 50rem;
+      display: grid;
+      padding: 40px;
+      margin: 30px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      font-size: 24px;
+      font-family: "IBM Mono", monospace;
+      line-height: 150%;
+    }
+    #about-me-p1 {
+      grid-area: 1/2/2/3;
+      margin-top: 1rem;
+    }
+
+    #about-me-p2 {
+      grid-area: 2/1/3/2;
+      // margin-bottom: 1rem;
+    }
+  }
+
+  .skills {
+    font-family: $body-font-family;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 96px;
+    margin: 30px;
+    padding: 30px;
+
+    h2 {
+      font-size: $heading-font-size-1024;
+    }
+
+    h3 {
+      font-size: $project-font-size;
+      padding: 30px;
+      justify-content: center;
+    }
+
+    #skills {
+      display: flex;
+      font-size: $skills-font-size;
+      padding: 20px;
+    }
+
+    .lines {
+      display: flex;
+    }
+  }
+}

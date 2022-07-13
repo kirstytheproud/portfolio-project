@@ -1,0 +1,37 @@
+//ABOUT ME SECTION
+.section__about-me {
+    margin: 0;
+    &--text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 31.25;
+      font-size: 1rem;
+      margin: 0;
+      font-family: "IBM Mono", monospace;
+  
+      a {
+        color: black;
+      }
+  
+      a:active {
+        color: black;
+      }
+    }
+  
+    #about-me-p1 {
+      padding: 1rem;
+      margin-top: 0;
+    }
+  
+    #about-me-p2 {
+      padding: 20px;
+    }
+  }
+  
+  .body__background--gradient {
+    background-image: url("img/body.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }

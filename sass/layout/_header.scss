@@ -1,0 +1,139 @@
+.header__landing-page {
+    background-image: url("img/hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  
+    /* Navbar */
+    nav {
+      color: black;
+      height: 50px;
+      font-weight: normal;
+      display: flex;
+      justify-content: space-between;
+      font-family: "IBM Mono", monospace;
+  
+      .header__logo {
+        width: 20%;
+      }
+  
+      .header__links {
+        width: 45%;
+        visibility: hidden;
+  
+        a {
+          visibility: hidden;
+          width: 33%;
+          color: black;
+          text-decoration: none;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  
+    .headline {
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  
+      .header__title--creative {
+        display: flex;
+        justify-content: center;
+        font-family: Monument, Arial-bold, arial, sans-serif;
+        color: white;
+        text-shadow: $title-text-shadow;
+        font-size: calc(1em + 8vw);
+      }
+  
+      .header__title--designer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+        font-family: Gallient, Times, serif;
+        font-size: calc(1em + 8vw);
+        color: white;
+        text-shadow: $title-text-shadow;
+      }
+  
+      .header__title--developer {
+        display: flex;
+        justify-content: center;
+        font-family: Monument, Arial-bold, arial, sans-serif;
+        font-size: calc(0.75em + 8vw);
+        color: white;
+        text-shadow: $title-text-shadow;
+      }
+    }
+  }
+  
+  .header__scroll {
+    display: inline-flex;
+    justify-content: center;
+  }
+  .rotate {
+    width: calc(2em + 8vw);
+    height: calc(2em + 8vh);
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 9000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 9000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 9000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+    animation-name: spin;
+    animation-duration: 9000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @-ms-keyframes spin {
+    from {
+      -ms-transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+    }
+  }
+  
+  @-moz-keyframes spin {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+    to {
+      -moz-transform: rotate(360deg);
+    }
+  }
+  
+  @-webkit-keyframes spin {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
