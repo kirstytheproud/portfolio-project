@@ -172,3 +172,30 @@
     // position: relative;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 50px;
+
+    .header__title--creative {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+    }
+
+    .header__title--designer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header__title--developer {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+}

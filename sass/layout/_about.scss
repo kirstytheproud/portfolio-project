@@ -35,3 +35,30 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  @media screen and (min-width: 1024px) {
+    .section__about-me {
+        display: flex;
+    
+        &--text {
+          height: 50rem;
+          display: grid;
+          padding: 40px;
+          margin: 30px;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          font-size: 24px;
+          font-family: "IBM Mono", monospace;
+          line-height: 150%;
+        }
+        #about-me-p1 {
+          grid-area: 1/2/2/3;
+          margin-top: 1rem;
+        }
+    
+        #about-me-p2 {
+          grid-area: 2/1/3/2;
+          // margin-bottom: 1rem;
+        }
+      }
+  }

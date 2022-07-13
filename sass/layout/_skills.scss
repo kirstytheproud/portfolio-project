@@ -50,7 +50,6 @@
   }
 }
 
-
 @media screen and (min-width: 600px) {
   // SKILLS SECTION
 
@@ -81,6 +80,38 @@
         margin: 1rem;
         max-width: 96px;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .skills {
+    font-family: $body-font-family;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 96px;
+    margin: 30px;
+    padding: 30px;
+
+    h2 {
+      font-size: $heading-font-size-1024;
+    }
+
+    h3 {
+      font-size: $project-font-size;
+      padding: 30px;
+      justify-content: center;
+    }
+
+    #skills {
+      display: flex;
+      font-size: $skills-font-size;
+      padding: 20px;
+    }
+
+    .lines {
+      display: flex;
     }
   }
 }
